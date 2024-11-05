@@ -1,3 +1,11 @@
+import streamlit as st
+import easyocr
+import cv2
+import numpy as np
+from PIL import Image
+
+# إعداد القارئ باستخدام EasyOCR
+reader = easyocr.Reader(['en'], gpu=False)
 # عنوان التطبيق
 st.title("تطبيق قراءة النتائج الطبية")
 
